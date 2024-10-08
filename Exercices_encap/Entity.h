@@ -3,8 +3,10 @@
 #include "Vector2.h"
 
 class Entity {
-public:
+
 	Vector2 position;
+
+public:
 
 	Entity(Vector2 _position);
 	Entity(float _x, float _y);
