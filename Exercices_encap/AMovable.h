@@ -5,5 +5,7 @@
 class AMovable {
 public:
 	float vitesse;
-	Vector2 vecteurUnitaire;
+	Vector2 direction;
+
+	AMovable(Vector2 _direction, float vitesse);
 };

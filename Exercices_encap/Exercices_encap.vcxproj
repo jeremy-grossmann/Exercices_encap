@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AMovable.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Exercices_encap.cpp" />
     <ClCompile Include="Vector2.cpp" />
