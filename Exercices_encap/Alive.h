@@ -7,6 +7,7 @@ class Alive {
 
 public:
 	
+	Alive();
 	Alive(float vie);
 
 	virtual float getMaxVie();

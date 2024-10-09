@@ -9,11 +9,15 @@ class AMovable {
 
 public:
 
+	AMovable();
 	AMovable(Vector2 _direction, float vitesse);
 
 	virtual void setDirection(Vector2 _direction);
+	virtual void setDirection(float x, float y);
 	virtual void setVitesse(float _vitesse);
+	virtual Vector2 getDirection();
 	virtual void deplacer() = 0;
+	
 
 
 };

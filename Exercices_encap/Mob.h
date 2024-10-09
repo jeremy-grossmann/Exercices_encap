@@ -6,6 +6,10 @@
 
 class Mob : public Entity, public Alive, public AMovable {
 public:
-	Mob(float x, float y, float vie, Vector2 direction);
 
+	Mob();
+	Mob(float x, float y, float vie, Vector2 direction, float vitesse);
+
+	void subirDegats(float degats) override;
+	void deplacer() override;
 };

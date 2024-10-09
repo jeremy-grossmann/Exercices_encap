@@ -1,5 +1,9 @@
 #include "Alive.h"
 
+Alive::Alive() : vie(0), maxVie(0)
+{
+}
+
 Alive::Alive(float _vie) : vie(_vie), maxVie(_vie)
 {
 }
