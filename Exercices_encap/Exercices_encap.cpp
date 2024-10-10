@@ -7,8 +7,10 @@
 #include "Mob.h"
 #include "Player.h"
 
+#include <World.h>
 int main()
 {
+    /*
     std::cout << "Hello World!\n";
     StaticObject so;
     BreakableObject bo;
@@ -18,6 +20,16 @@ int main()
     std::cout << player.isAlive() << std::endl;
     std::cout << player.getVie() << std::endl;
     player.attaquer(mob);
+    */
+    World world;
+    world.init();
+    do {
+        world.step();
+        std::cout << "______________" << std::endl;
+    } while (!world.getIsFinished());
+        
+
+    
 
 
 

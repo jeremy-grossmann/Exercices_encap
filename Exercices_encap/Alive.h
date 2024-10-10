@@ -13,5 +13,6 @@ public:
 	virtual float getMaxVie();
 	virtual float getVie();
 	virtual void subirDegats(float degats);
+	bool isAlive();
 
 };

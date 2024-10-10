@@ -30,4 +30,9 @@ Vector2 AMovable::getDirection()
 	return direction;
 }
 
+float AMovable::getVitesse()
+{
+	return vitesse;
+}
+
 

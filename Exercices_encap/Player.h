@@ -13,7 +13,6 @@ public:
 
 	void subirDegats(float degats) override;
 	void deplacer() override;
-	bool isAlive() override;
 	void attaquer(Alive* vivant) override;
 
 

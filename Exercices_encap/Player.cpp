@@ -20,20 +20,16 @@ void Player::subirDegats(float degats)
 
 void Player::deplacer()
 {
-	deplacer();
+	
 	setPostion(getPosition().getX() + getDirection().getX(), getPosition().getY() + getDirection().getY());
 	std::cout << "Player move to x = " << getPosition().getX() << " and y = " << getPosition().getY() << std::endl;
 }
 
-bool Player::isAlive()
-{
-	return getVie() > 0;
-}
 
 void Player::attaquer(Alive* vivant)
 {
 	vivant->subirDegats(10);
-	std::cout << "Player just attacked";
+	std::cout << "Player just attacked" << std::endl;
 }
 
 

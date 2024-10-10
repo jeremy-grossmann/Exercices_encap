@@ -20,7 +20,7 @@ void Mob::subirDegats(float degats)
 
 void Mob::deplacer()
 {
-	deplacer();
-	setPostion(getPosition().getX() + getDirection().getX(), getPosition().getY() + getDirection().getY());
+	
+	setPostion((getPosition().getX() + getDirection().getX()) * getVitesse(), (getPosition().getY() + getDirection().getY()) * getVitesse());
 	std::cout << "Mob move to x = " << getPosition().getX() << " and y = " << getPosition().getY() << std::endl;
 }

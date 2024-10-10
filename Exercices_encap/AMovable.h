@@ -16,6 +16,7 @@ public:
 	virtual void setDirection(float x, float y);
 	virtual void setVitesse(float _vitesse);
 	virtual Vector2 getDirection();
+	float getVitesse();
 	virtual void deplacer() = 0;
 	
 
