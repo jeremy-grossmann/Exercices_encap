@@ -20,9 +20,10 @@ void Player::subirDegats(float degats)
 
 void Player::deplacer()
 {
-	
-	setPostion((getPosition().getX() + getDirection().getX()) * getVitesse(), (getPosition().getY() + getDirection().getY()) * getVitesse());
-	std::cout << "Player move to x = " << getPosition().getX() << " and y = " << getPosition().getY() << std::endl;
+	if (isAlive()) {
+		setPostion((getPosition().getX() + getDirection().getX()) * getVitesse(), (getPosition().getY() + getDirection().getY()) * getVitesse());
+		std::cout << "Player move to x = " << getPosition().getX() << " and y = " << getPosition().getY() << std::endl;
+	}
 }
 
 
